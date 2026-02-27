@@ -29,13 +29,13 @@ article header h2+p {
 }
 
 article div a.btn {
-    margin-top: 0.4em;
-    margin-bottom: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     display: inline-block;
 }
 
 article>div {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.2em;
 }
 
 /* Consistent group picture sizing across all meeting posts */
