@@ -69,6 +69,19 @@ img.pi-portrait {
     flex-shrink: 0;
 }
 
+/* News category header */
+.news-heading {
+    padding: 0 8%;
+}
+
+.news-intro {
+    padding: 0 8% 1em;
+}
+
+.news-divider {
+    margin: 0 8% 1em;
+}
+
 /* Abstract fold/unfold for meeting presentation abstracts */
 .abstract-short-text {
     display: -webkit-box;

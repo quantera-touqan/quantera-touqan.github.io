@@ -21,13 +21,15 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-LINKS = (
+_NAV_ITEMS = (
     ("News", "/category/news.html"),
     ("About", "/pages/summary-of-the-project.html"),
     ("Publications", "/pages/publications.html"),
     ("Principal Investigators", "/pages/principal-investigators.html"),
     ("Contact", "/pages/contact.html"),
 )
+
+LINKS = _NAV_ITEMS
 
 DISPLAY_PAGES_ON_MENU = False
 
@@ -38,13 +40,7 @@ DEFAULT_PAGINATION = False
 DEFAULT_CATEGORY = "News"
 USE_FOLDER_AS_CATEGORY = False
 SUMMARY_MAX_LENGTH = 40
-MENUITEMS = (
-    ("News", "/category/news.html"),
-    ("About", "/pages/summary-of-the-project.html"),
-    ("Publications", "/pages/publications.html"),
-    ("Principal Investigators", "/pages/principal-investigators.html"),
-    ("Contact", "/pages/contact.html"),
-)
+MENUITEMS = _NAV_ITEMS
 
 ARTICLE_PATHS = ["posts"]
 ARTICLE_URL = "posts/{slug}.html"

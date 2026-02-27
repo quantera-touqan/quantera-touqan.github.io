@@ -124,23 +124,23 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('details').forEach(function (details) {
-            var summary = details.querySelector('summary');
-            var body = details.querySelector('.abstract-body');
+            const summary = details.querySelector('summary');
+            const body = details.querySelector('.abstract-body');
             if (!summary || !body) return;
 
-            var summaryText = summary.textContent.trim();
-            var bodyText = body.textContent.trim();
-            var fullText = summaryText + ' ' + bodyText;
+            const summaryText = summary.textContent.trim();
+            const bodyText = body.textContent.trim();
+            const fullText = summaryText + ' ' + bodyText;
 
             // Build collapsed view
-            var collapsed = document.createElement('span');
+            const collapsed = document.createElement('span');
             collapsed.className = 'abstract-collapsed';
 
-            var shortText = document.createElement('span');
+            const shortText = document.createElement('span');
             shortText.className = 'abstract-short-text';
             shortText.textContent = summaryText;
 
-            var showMore = document.createElement('a');
+            const showMore = document.createElement('a');
             showMore.className = 'abstract-toggle-link';
             showMore.href = '#';
             showMore.textContent = '[show more]';
@@ -151,14 +151,14 @@
             collapsed.appendChild(showMore);
 
             // Build expanded view
-            var expanded = document.createElement('span');
+            const expanded = document.createElement('span');
             expanded.className = 'abstract-expanded';
             expanded.style.display = 'none';
 
-            var fullTextSpan = document.createElement('span');
+            const fullTextSpan = document.createElement('span');
             fullTextSpan.textContent = fullText;
 
-            var showLess = document.createElement('a');
+            const showLess = document.createElement('a');
             showLess.className = 'abstract-toggle-link';
             showLess.href = '#';
             showLess.textContent = '[show less]';
@@ -169,7 +169,7 @@
             expanded.appendChild(showLess);
 
             // Wrap both states
-            var wrapper = document.createElement('span');
+            const wrapper = document.createElement('span');
             wrapper.className = 'abstract-wrapper';
             wrapper.appendChild(collapsed);
             wrapper.appendChild(expanded);
