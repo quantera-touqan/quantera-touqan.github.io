@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block title %} &ndash; {{ _('Category %(name)s', name=category) }}{% endblock %}
+{% set summarise = True %}
+
+{% block content %}
+{% if category.name == "News" %}
+<h1 style="padding: 0 8%;">News</h1>
+<div style="padding: 0 8% 2%;">
+    <p>For the latest updates and announcements, follow us on Twitter at <a
+            href="https://twitter.com/TouQan_quantum">@TouQan_quantum</a>. You can also find our full Twitter feed
+        below!</p>
+    <a class="twitter-timeline" href="https://twitter.com/TouQan_quantum?ref_src=twsrc%5Etfw">Tweets by
+        TouQan_quantum</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<hr style="margin: 0 8% 2%;">
+{% endif %}
+{{ super() }}
+{% endblock %}
