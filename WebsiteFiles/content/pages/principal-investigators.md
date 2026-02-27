@@ -5,7 +5,13 @@ Modified: 2024-02-02
 Our consortium consists of five PIs spread over five different countries and institutions. Here are their profiles:
 
 ### Alvaro Alhambra
-Alvaro is a RyC fellow at Instituto de Fisica Teorica as a member of CSIC, Spain's largest public research institution. You can discover more about his research on his [personal website](https://aalhambra.wordpress.com/) or on [Twitter](https://twitter.com/AlhambraAlvaro).
+
+<div class="pi-entry">
+  <img src="{static}/images/alvaro_alhambra_portrait.png" alt="Alvaro Alhambra" class="pi-portrait">
+  <div class="pi-text">
+    Alvaro is a RyC fellow at Instituto de Fisica Teorica as a member of CSIC, Spain's largest public research institution. You can discover more about his research on his <a href="https://aalhambra.wordpress.com/">personal website</a> or on <a href="https://twitter.com/AlhambraAlvaro">Twitter</a>.
+  </div>
+</div>
 
 ### Ángela Capel
 
