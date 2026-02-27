@@ -70,16 +70,30 @@ img.pi-portrait {
 }
 
 /* Abstract fold/unfold for meeting presentation abstracts */
-details summary {
-    cursor: pointer;
-    display: list-item;
+.abstract-short-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
-span.abstract-body {
+.abstract-collapsed {
     display: block;
-    margin-top: 0.4em;
-    padding: 0.4em 0.8em;
-    border-left: 3px solid #aaa;
-    font-size: 0.95em;
-    opacity: 0.9;
+}
+
+.abstract-expanded {
+    display: block;
+}
+
+.abstract-toggle-link {
+    white-space: nowrap;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.abstract-toggle-link:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
