@@ -68,3 +68,18 @@ img.pi-portrait {
     border-radius: 4px;
     flex-shrink: 0;
 }
+
+/* Abstract fold/unfold for meeting presentation abstracts */
+details summary {
+    cursor: pointer;
+    display: list-item;
+}
+
+span.abstract-body {
+    display: block;
+    margin-top: 0.4em;
+    padding: 0.4em 0.8em;
+    border-left: 3px solid #aaa;
+    font-size: 0.95em;
+    opacity: 0.9;
+}
