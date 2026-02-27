@@ -32,7 +32,13 @@ Our consortium consists of five PIs spread over five different countries and ins
 </div>
 
 ### Michał Oszmaniec
-Michal is a Leader of Quantum Computing Groups at CTP PAS and NASK in Warsaw, Poland. You can discover more about his research on his [personal website](https://quantin.pl/) or on [Twitter](https://twitter.com/MichalOszmaniec).
+
+<div class="pi-entry">
+  <img src="{static}/images/michal_oszmaniec_portrait.png" alt="Michał Oszmaniec" class="pi-portrait">
+  <div class="pi-text">
+    Michal is a Leader of Quantum Computing Groups at CTP PAS and NASK in Warsaw, Poland. You can discover more about his research on his <a href="https://quantin.pl/">personal website</a> or on <a href="https://twitter.com/MichalOszmaniec">Twitter</a>.
+  </div>
+</div>
 
 ### Mischa Woods
 
