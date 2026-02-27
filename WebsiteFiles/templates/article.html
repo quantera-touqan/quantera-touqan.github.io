@@ -120,3 +120,74 @@
     {% include "partial/isso.html" %}
 </article>
 {% endblock %}
+{% block additional_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('details').forEach(function (details) {
+            var summary = details.querySelector('summary');
+            var body = details.querySelector('.abstract-body');
+            if (!summary || !body) return;
+
+            var summaryText = summary.textContent.trim();
+            var bodyText = body.textContent.trim();
+            var fullText = summaryText + ' ' + bodyText;
+
+            // Build collapsed view
+            var collapsed = document.createElement('span');
+            collapsed.className = 'abstract-collapsed';
+
+            var shortText = document.createElement('span');
+            shortText.className = 'abstract-short-text';
+            shortText.textContent = summaryText;
+
+            var showMore = document.createElement('a');
+            showMore.className = 'abstract-toggle-link';
+            showMore.href = '#';
+            showMore.textContent = '[show more]';
+            showMore.setAttribute('aria-expanded', 'false');
+
+            collapsed.appendChild(shortText);
+            collapsed.appendChild(document.createTextNode(' \u2026 '));
+            collapsed.appendChild(showMore);
+
+            // Build expanded view
+            var expanded = document.createElement('span');
+            expanded.className = 'abstract-expanded';
+            expanded.style.display = 'none';
+
+            var fullTextSpan = document.createElement('span');
+            fullTextSpan.textContent = fullText;
+
+            var showLess = document.createElement('a');
+            showLess.className = 'abstract-toggle-link';
+            showLess.href = '#';
+            showLess.textContent = '[show less]';
+            showLess.setAttribute('aria-expanded', 'true');
+
+            expanded.appendChild(fullTextSpan);
+            expanded.appendChild(document.createTextNode(' '));
+            expanded.appendChild(showLess);
+
+            // Wrap both states
+            var wrapper = document.createElement('span');
+            wrapper.className = 'abstract-wrapper';
+            wrapper.appendChild(collapsed);
+            wrapper.appendChild(expanded);
+
+            details.parentNode.replaceChild(wrapper, details);
+
+            showMore.addEventListener('click', function (e) {
+                e.preventDefault();
+                collapsed.style.display = 'none';
+                expanded.style.display = 'inline';
+            });
+
+            showLess.addEventListener('click', function (e) {
+                e.preventDefault();
+                expanded.style.display = 'none';
+                collapsed.style.display = 'inline';
+            });
+        });
+    });
+</script>
+{% endblock %}
