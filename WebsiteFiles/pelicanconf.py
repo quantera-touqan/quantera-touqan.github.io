@@ -70,7 +70,7 @@ DELETE_OUTPUT_DIRECTORY = True
 THEME = os.path.join(_HERE, "Flex")
 THEME_TEMPLATES_OVERRIDES = [os.path.join(_HERE, "templates")]
 
-SITELOGO = "/theme/img/profile.png"
+SITELOGO = "/images/profile.png"
 SITELOGO_SIZE = 120
 
 # Uncomment following line if you want document-relative URLs when developing
