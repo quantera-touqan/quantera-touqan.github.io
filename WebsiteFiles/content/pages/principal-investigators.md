@@ -37,11 +37,17 @@ Michal is a Leader of Quantum Computing Groups at CTP PAS and NASK in Warsaw, Po
 ### Mischa Woods
 
 <div class="pi-entry">
-  <img src="{static}/images/mischa_woods_portrait.jpg" alt="Mischa Woods" class="pi-portrait">
+  <img src="{static}/images/mischa_woods_portrait.png" alt="Mischa Woods" class="pi-portrait">
   <div class="pi-text">
     Mischa is Inria faculty hosted at ENS Lyon, France. You can discover more about his research on his <a href="https://mischawoods.com/">personal website</a>, on <a href="https://twitter.com/WoodsMischa">Twitter</a>, or on <a href="https://bsky.app/profile/mischawoods.bsky.social">Bluesky</a>.
   </div>
 </div>
 
 ### Daniel Stilck França
-Daniel is an Associate Professor at the Department of Mathematical Sciences of the University of Copenhagen. You can discover more about his research on his [personal website](https://danielstilckfranca.eu/) or on [Twitter](https://twitter.com/dsfranca).
+
+<div class="pi-entry">
+  <img src="{static}/images/daniel_stilck_franca_portrait.png" alt="Daniel Stilck França" class="pi-portrait">
+  <div class="pi-text">
+    Daniel is an Associate Professor at the Department of Mathematical Sciences of the University of Copenhagen. You can discover more about his research on his <a href="https://danielstilckfranca.eu/">personal website</a> or on <a href="https://twitter.com/dsfranca">Twitter</a>.
+  </div>
+</div>
