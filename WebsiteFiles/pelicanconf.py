@@ -68,6 +68,7 @@ MARKDOWN = {
 DELETE_OUTPUT_DIRECTORY = True
 
 THEME = os.path.join(_HERE, "Flex")
+THEME_TEMPLATES_OVERRIDES = [os.path.join(_HERE, "templates")]
 
 SITELOGO = "/theme/img/profile.png"
 SITELOGO_SIZE = 120
