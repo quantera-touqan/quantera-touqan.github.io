@@ -25,7 +25,7 @@ _NAV_ITEMS = (
     ("News", "/category/news.html"),
     ("About", "/pages/summary-of-the-project.html"),
     ("Publications", "/pages/publications.html"),
-    ("Principal Investigators", "/pages/principal-investigators.html"),
+    ("Team", "/pages/principal-investigators.html"),
     ("Contact", "/pages/contact.html"),
 )
 
