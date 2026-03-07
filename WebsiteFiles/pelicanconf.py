@@ -69,6 +69,7 @@ THEME_TEMPLATES_OVERRIDES = [os.path.join(_HERE, "templates")]
 
 SITELOGO = "/images/profile.png"
 SITELOGO_SIZE = 120
+FAVICON = "/images/profile.png"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
