@@ -50,6 +50,7 @@ STATIC_PATHS = ["images", "extra"]
 EXTRA_PATH_METADATA = {
     "extra/custom.css": {"path": "custom.css"},
     "extra/.nojekyll": {"path": ".nojekyll"},
+    "extra/googlef0f6f8b9d9d8f021.html": {"path": "googlef0f6f8b9d9d8f021.html"},
 }
 CUSTOM_CSS = "custom.css"
 
