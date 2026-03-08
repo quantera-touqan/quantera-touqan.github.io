@@ -49,11 +49,6 @@ Our consortium brings together principal investigators, PhD students, and postdo
   <img src="{static}/images/michal_oszmaniec_portrait.png" alt="Michał Oszmaniec" class="pi-portrait">
   <div class="pi-text">
     Michal is a Leader of Quantum Computing Groups at CTP PAS and NASK in Warsaw, Poland. You can discover more about his research on his <a href="https://quantin.pl/">personal website</a> or on <a href="https://twitter.com/MichalOszmaniec">Twitter</a>.
-    In the TouQan project, his group includes the following researchers:
-    <ul>
-      <li>Daiki Suruga (PhD Student)</li>
-      <li>Oliver Reardon-Smith (Postdoctoral Researcher)</li>
-    </ul>
   </div>
 </div>
 
