@@ -1,0 +1,32 @@
+{% if not PLUGINS or 'seo' not in PLUGINS or 'pelican.plugins.seo' not in PLUGINS %}
+  {% if OG_LOCALE %}
+    {% set default_locale = OG_LOCALE %}
+  {% else %}
+    {% set default_locale = 'en_US' %}
+  {% endif %}
+
+  {% set share_image = SHARE_IMAGE|default(SITELOGO) %}
+  {% if share_image and not share_image.startswith('http') and SITEURL %}
+    {% if share_image.startswith('/') %}
+      {% set share_image = SITEURL + share_image %}
+    {% else %}
+      {% set share_image = SITEURL + '/' + share_image %}
+    {% endif %}
+  {% endif %}
+
+  <meta property="og:site_name" content="{{ SITENAME }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="{{ SITENAME }}"/>
+  <meta property="og:description" content="{{ SITEDESCRIPTION }}"/>
+  <meta property="og:locale" content="{{ default_locale }}"/>
+  <meta property="og:url" content="{{ SITEURL }}"/>
+  {% if share_image %}
+  <meta property="og:image" content="{{ share_image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ share_image }}">
+  {% else %}
+  <meta name="twitter:card" content="summary">
+  {% endif %}
+  <meta name="twitter:title" content="{{ SITENAME }}">
+  <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
+{% endif %}

@@ -5,6 +5,8 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHOR = "Daniel Stilck Franca, Tim Möbus"
 SITENAME = "TouQan — QuantERA Project"
 SITEURL = ""
+SITEDESCRIPTION = "TouQan aims to bridge gaps in our theoretical understanding of potential quantum advantages in quantum simulators."
+ROBOTS = "index, follow, max-image-preview:large"
 
 PATH = os.path.join(_HERE, "content")
 OUTPUT_PATH = os.path.join(_HERE, "output")
@@ -69,6 +71,7 @@ THEME = os.path.join(_HERE, "Flex")
 THEME_TEMPLATES_OVERRIDES = [os.path.join(_HERE, "templates")]
 
 SITELOGO = "/images/profile.png"
+SHARE_IMAGE = "/images/profile.png"
 SITELOGO_SIZE = 120
 FAVICON = "/images/favicon-48.png"
 

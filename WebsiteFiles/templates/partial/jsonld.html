@@ -1,0 +1,18 @@
+{% set jsonld_image = SHARE_IMAGE|default(SITELOGO) %}
+{% if jsonld_image and not jsonld_image.startswith('http') and SITEURL %}
+  {% if jsonld_image.startswith('/') %}
+    {% set jsonld_image = SITEURL + jsonld_image %}
+  {% else %}
+    {% set jsonld_image = SITEURL + '/' + jsonld_image %}
+  {% endif %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ SITENAME }}",
+  "url": "{{ SITEURL }}",
+  "image": "{{ jsonld_image }}",
+  "description": "{{ SITEDESCRIPTION }}"
+}
+</script>
