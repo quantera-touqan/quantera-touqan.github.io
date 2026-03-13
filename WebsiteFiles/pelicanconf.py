@@ -50,6 +50,7 @@ STATIC_PATHS = ["images", "extra"]
 EXTRA_PATH_METADATA = {
     "extra/custom.css": {"path": "custom.css"},
     "extra/.nojekyll": {"path": ".nojekyll"},
+    "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/googlef0f6f8b9d9d8f021.html": {"path": "googlef0f6f8b9d9d8f021.html"},
 }
 CUSTOM_CSS = "custom.css"
@@ -69,7 +70,7 @@ THEME_TEMPLATES_OVERRIDES = [os.path.join(_HERE, "templates")]
 
 SITELOGO = "/images/profile.png"
 SITELOGO_SIZE = 120
-FAVICON = "/images/profile.png"
+FAVICON = "/images/favicon-48.png"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
